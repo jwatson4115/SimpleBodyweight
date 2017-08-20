@@ -21,6 +21,7 @@ import { FullLayoutComponent } from './layouts/full-layout.component';
 import { HomeComponent } from './home/home.component';
 import { WorkoutComponent } from './workout/workout.component';
 import { StatisticsComponent } from './statistics/statistics.component';
+import { ExerciseComponent } from './exercise/exercise.component';
 
 @NgModule({
   imports: [
@@ -39,7 +40,8 @@ import { StatisticsComponent } from './statistics/statistics.component';
     AsideToggleDirective,
     HomeComponent,
     WorkoutComponent,
-    StatisticsComponent
+    StatisticsComponent,
+    ExerciseComponent
   ],
   bootstrap: [ AppComponent ]
 })

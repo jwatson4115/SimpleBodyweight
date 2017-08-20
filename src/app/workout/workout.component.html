@@ -1,3 +1,18 @@
 <div class="animated fadeIn">
-  Workout Component!
+  <div class="row">
+    <div class="col-md-6">
+      <app-exercise 
+        [name]="'Squats'" 
+        [exercises]=
+          "['Assisted squat', 'Deep assisted squat', 'Squats', 
+            'Deep squats', 'Bulgarian split squats', 'Beginner shrimps', 
+            'Assisted one-legged squats', 'Balance assisted one legged squats', 'Weighted one-legged squats',
+            'One-legged squats', 'Renegade pistols', 'Intermediate shrimps', 'Advanced shrimps']" 
+        [minReps]="3" 
+        [maxReps]="8"
+      >
+
+      </app-exercise>
+    </div>
+  </div>
 </div>

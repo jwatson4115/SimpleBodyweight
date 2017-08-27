@@ -1,3 +1,4 @@
+import { StartBodyweightService } from './services/start-bodyweight/start-bodyweight.service';
 import { PathLocationStrategy } from '@angular/common/src/location/path_location_strategy';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -22,6 +23,7 @@ import { HomeComponent } from './home/home.component';
 import { WorkoutComponent } from './workout/workout.component';
 import { StatisticsComponent } from './statistics/statistics.component';
 import { ExerciseComponent } from './exercise/exercise.component';
+import { PaginationComponent } from './pagination/pagination.component';
 
 @NgModule({
   imports: [
@@ -41,8 +43,12 @@ import { ExerciseComponent } from './exercise/exercise.component';
     HomeComponent,
     WorkoutComponent,
     StatisticsComponent,
-    ExerciseComponent
+    ExerciseComponent,
+    PaginationComponent,
   ],
-  bootstrap: [ AppComponent ]
+  bootstrap: [ AppComponent ],
+  providers: [
+    StartBodyweightService,
+  ],
 })
 export class AppModule { }

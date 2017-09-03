@@ -1,1 +1,6 @@
 // Here you can add other styles
+.main .container-fluid {
+  @include media-breakpoint-down(md) {
+    padding: 0;
+  }
+}

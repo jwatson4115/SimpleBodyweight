@@ -1,0 +1,44 @@
+{
+  "progressions": [
+    {
+      "name": "Squats",
+      "exercises": [
+        "Assisted squat", 
+        "Deep assisted squat", 
+        "Squats", 
+        "Deep squats", 
+        "Bulgarian split squats", 
+        "Beginner shrimps", 
+        "Assisted One legged squats",
+        "Balance assisted One legged squats",
+        "Weighted one legged squats",
+        "One-legged squats",
+        "Renegade pistols",
+        "Intermediate shrimps",
+        "Advanced shrimps"
+      ]
+    },
+    {
+      "name": "Pull ups",
+      "exercises": [
+        "Leg assisted pull ups",
+        "Jackknife pull ups",
+        "Eccentric pull ups",
+        "Half pull ups (top half)", 
+        "Pull ups",
+        "close grip pull ups",
+        "Wide grip pull ups",
+        "Archer pull ups",
+        "Sternum pull ups",
+        "Belly button pull ups",
+        "One arm towl-assisted pull ups",
+        "One arm towel-assisted pull ups and eccentrics",
+        "Half one arm pull ups",
+        "One arm pull ups"
+      ]
+    }
+  ],
+  "minReps": 3,
+  "maxReps": 8,
+  "sets": 3
+}

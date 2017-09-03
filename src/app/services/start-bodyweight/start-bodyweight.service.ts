@@ -1,9 +1,12 @@
+import { Workout } from '../../domain/start-bodyweight';
 import { Injectable } from '@angular/core';
+import { Http } from '@angular/http';
+import 'rxjs/add/operator/map';
 
 @Injectable()
 export class StartBodyweightService {
 
-  constructor() { }
+  constructor(private _http: Http) { }
 
   getProgressionNames () {
     const progressionNames = [
@@ -18,5 +21,10 @@ export class StartBodyweightService {
     ];
 
     return progressionNames;
+  }
+
+  getTempWorkoutData() {
+      return this._http.get('/assets/temp-progression-data.json')
+        .map(res => res.json());
   }
 }

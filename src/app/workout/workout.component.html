@@ -1,24 +1,26 @@
 <div class="animated fadeIn">
   <div class="row">
     <div class="col-md-6">
-      <app-pagination> </app-pagination>
+      <app-pagination 
+        *ngIf=workout
+        [progression]="workout.progression"
+      >
+      </app-pagination>
     </div>
   </div>
 
   <div class="row">
     <div class="col-md-6">
+      
       <app-exercise 
-        [name]="'Squats'" 
-        [exercises]=
-          "['Assisted squat', 'Deep assisted squat', 'Squats', 
-            'Deep squats', 'Bulgarian split squats', 'Beginner shrimps', 
-            'Assisted one-legged squats', 'Balance assisted one legged squats', 'Weighted one-legged squats',
-            'One-legged squats', 'Renegade pistols', 'Intermediate shrimps', 'Advanced shrimps']" 
-        [minReps]="3" 
-        [maxReps]="8"
+        *ngIf=workout 
+        [name]="workout.progression[0].name" 
+        [exercises]="workout.progression[0].exercises" 
+        [minReps]="workout.minReps" 
+        [maxReps]="workout.maxReps"
       >
-
       </app-exercise>
+      
     </div>
   </div>
 </div>

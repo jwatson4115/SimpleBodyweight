@@ -1,3 +1,5 @@
+import { HttpModule } from '@angular/http';
+import { ReactiveFormsModule } from '@angular/forms';
 import { StartBodyweightService } from './services/start-bodyweight/start-bodyweight.service';
 import { PathLocationStrategy } from '@angular/common/src/location/path_location_strategy';
 import { NgModule } from '@angular/core';
@@ -31,7 +33,9 @@ import { PaginationComponent } from './pagination/pagination.component';
     AppRoutingModule,
     BsDropdownModule.forRoot(),
     TabsModule.forRoot(),
-    ChartsModule
+    ChartsModule,
+    ReactiveFormsModule,
+    HttpModule,
   ],
   declarations: [
     AppComponent,
